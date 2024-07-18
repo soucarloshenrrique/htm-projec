@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Pessoal</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>pode</h1>
+    <header>
+        <h1>Bem-vindo ao Meu Blog Pessoal</h1>
+        <p>Nome: Carlos Henrrique</p>
+        <p>Data de Nascimento: 14 de Maio de 1996</p>
+        <p>Última Atualização: <span id="last-update"></span></p>
+    </header>
+    
+    <section>
+        <h2>Minha Rotina Diária</h2>
+        <p>Minha rotina começa cedo, às 6h da manhã. Gosto de começar o dia com uma corrida matinal, seguida de um café da manhã saudável. vou para academia depois disso e quando volto ja começo a preparar minha comida e a rotina do dia.</p>
+    </section>
+    
+    <section>
+        <h2>Meus Hobbies</h2>
+        <p>Nos meus tempos livres, academia, passear com minha filha e cozinhar novas receitas. Também sou um grande fã de fotografia e gosto de capturar momentos especiais.</p>
+    </section>
+    
+    <section>
+        <h2>Bandas/Artistas Favoritos</h2>
+        <p>Eu sou um grande fã de rock clássico. Minhas bandas favoritas incluem Queen, Pink Floyd. Também gosto de sertanejo e funk as vezes.</p>
+    </section>
+    
+    <section>
+        <h2>Minhas Viagens</h2>
+        <p>Já viajei para diversos lugares ao redor do mundo. Minhas viagens favoritas foram para o Portugal,França  a Itália, onde visitei Roma e Veneza. Planejo visitar a Dubai,Egito,New york no próximo ano.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Carlos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // JavaScript to update the "Última Atualização" date
+        const lastUpdateElement = document.getElementById('last-update');
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString('pt-BR', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        });
+        lastUpdateElement.textContent = formattedDate;
+    </script>
 </body>
 </html>
